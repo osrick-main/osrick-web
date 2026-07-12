@@ -4,9 +4,9 @@
         <div class="footer-brand">
             <a href="{% url 'home' %}" class="logo">
                 <div class="logo-icon" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
-            <img src="{% static 'images/icon.png' %}" alt="JMD Logo" style="width: 100%; height: 100%; object-fit: contain;">
+            <img src="{% static 'images/icon.png' %}" alt="Osrick Logo" style="width: 100%; height: 100%; object-fit: contain;">
         </div>
-                <span>JMD</span> <!-- eTech থেকে JMD করা হলো -->
+                <span>Osrick</span> 
             </a>
             <p>Next-gen BPO & customer support solutions driven by dedicated English-speaking agents and verified industry experts.</p>
             <div class="social-links">
@@ -35,18 +35,20 @@
             </div>
             <div class="footer-col">
                 <h6>Contact</h6>
-                <p><i class="fa-solid fa-envelope"></i> hello@jmd-bpo.com</p> <!-- ইমেইল JMD করা হলো -->
-                <p><i class="fa-solid fa-phone"></i> +1 (555) 019-2834</p>
-                <p><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+                <p><i class="fa-solid fa-envelope"></i> osrick.businees@gmail.com</p> 
+                <p><i class="fa-solid fa-phone"></i> +880 1924-57478</p>
+                <p><i class="fa-solid fa-location-dot"></i> 914/Block-B, Gacha, Gazipur</p>
             </div>
         </div>
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2026 JMD Solutions. All rights reserved.</p> <!-- কপিরাইট নাম পরিবর্তন -->
+        <p>&copy; 2026 Osrick Solutions. All rights reserved.</p> <!-- কপিরাইট নাম পরিবর্তন -->
         <div class="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
+            <a href="{% url 'privacy' %}">Privacy Policy</a>
+
+<a href="{% url 'terms' %}">Terms of Service</a>
+
         </div>
     </div>
 </footer>

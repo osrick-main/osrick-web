@@ -2,7 +2,10 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    # Home
     path('', views.home, name='home'),
+
+    # Main Pages
     path('about/', views.about, name='about'),
     path('why-choose-us/', views.why_choose_us, name='why_choose_us'),
     path('industries/', views.industries, name='industries'),
@@ -10,6 +13,8 @@ urlpatterns = [
     path('careers/', views.careers, name='careers'),
     path('blog/', views.blog, name='blog'),
     path('contact/', views.contact, name='contact'),
+
+    # Forms
     path('save-inquiry/', views.save_inquiry, name='save_inquiry'),
     path('save-application/', views.save_application, name='save_application'),
 
@@ -20,4 +25,9 @@ urlpatterns = [
     path('services/live-chat/', views.live_chat, name='live_chat'),
     path('services/email-ticket/', views.email_ticket, name='email_ticket'),
     path('services/technical-helpdesk/', views.technical_helpdesk, name='technical_helpdesk'),
+
+    # Legal Pages
+    path('privacy-policy/', views.privacy, name='privacy'),
+    path('terms-of-service/', views.terms, name='terms'),
+    path('cookie-policy/', views.cookies, name='cookies'),
 ]

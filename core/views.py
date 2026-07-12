@@ -3,7 +3,16 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from .models import BusinessInquiry
 from .models import JobApplication
+from django.shortcuts import render
 
+def privacy(request):
+    return render(request, 'legal/privacy.html')
+
+def terms(request):
+    return render(request, 'legal/terms.html')
+
+def cookies(request):
+    return render(request, 'legal/cookies.html')
 def save_application(request):
     if request.method == "POST":
         position = request.POST.get('position')

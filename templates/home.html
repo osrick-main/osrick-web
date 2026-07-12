@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}JMD — BPO & Call Centre Solutions{% endblock %}
+{% block title %}Osrick — BPO & Call Centre Solutions{% endblock %}
 
 {% block page_css %}
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
@@ -20,7 +20,7 @@
         </h1>
 
         <p data-aos="fade-up" data-aos-delay="200">
-            JMD is a startup BPO based in Bangladesh, built by a team of 10 dedicated English-speaking agents. We may be new — but we're focused, trained, and ready to deliver real results for international clients.
+            Osrick is a startup BPO based in Bangladesh, built by a team of 10 dedicated English-speaking agents. We may be new — but we're focused, trained, and ready to deliver real results for international clients.
         </p>
 
         <div class="hero-trust-pillars" data-aos="fade-up" data-aos-delay="300">
@@ -47,23 +47,17 @@
 
     <div class="hero-images" data-aos="fade-left" data-aos-delay="200">
         <div class="image-box arch-left">
-            <img src="{% static 'images/expert1.jpg' %}"
-                 alt="JMD Team Member"
-                 onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400'">
-            <div class="image-label">Support Lead</div>
-        </div>
-        <div class="image-box arch-center-hero">
-            <img src="{% static 'images/expert2.jpg' %}"
-                 alt="JMD Founder"
-                 onerror="this.src='https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=400'">
-            <div class="image-label">Founder</div>
-        </div>
-        <div class="image-box arch-right">
-            <img src="{% static 'images/expert3.jpg' %}"
-                 alt="JMD Team Member"
-                 onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400'">
-            <div class="image-label">Operations</div>
-        </div>
+    <img src="{% static 'images/hero2.png' %}"
+         alt="Osrick Team Member">
+    
+</div>
+
+<div class="image-box arch-center-hero">
+    <img src="{% static 'images/hero1.png' %}"
+         alt="Osrick Founder">
+    
+</div>
+    
     </div>
 </section>
 
@@ -89,55 +83,115 @@
 </div>
 
 <section id="services" class="services-section">
-    <div class="section-tag" data-aos="fade-up"><i class="fa-solid fa-layer-group"></i> What We Do</div>
+    <div class="section-tag" data-aos="fade-up">
+        <i class="fa-solid fa-layer-group"></i> What We Do
+    </div>
+
     <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
         BPO Services Built For <br>International Standards
     </h2>
+
     <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
-        From inbound calls to live chat support — we handle the customer-facing work so you can focus on growing your business.
+        From customer support to virtual assistance, we help businesses streamline operations, improve customer experience, and scale efficiently.
     </p>
 
     <div class="services-grid">
+
+        <!-- Customer Support -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
-            <h3>24/7 Inbound Support</h3>
-            <p>We handle your customer support tickets, live chats, and phone calls around the clock — so your customers are never left waiting.</p>
-            <a href="#" class="service-link" onclick="openServiceModal('inbound'); return false;">
+            <div class="service-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <h3>Customer Support</h3>
+
+            <p>
+                Deliver exceptional customer experiences through professional phone,
+                email, and live chat support available whenever your customers need assistance.
+            </p>
+
+            <a href="#" class="service-link" onclick="openServiceModal('customer_support'); return false;">
                 Learn More <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
 
+        <!-- Sales -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-icon"><i class="fa-solid fa-bullseye"></i></div>
-            <h3>Outbound Telemarketing</h3>
-            <p>We reach out to your prospects with clear, professional communication — cold calling, lead generation, and appointment setting handled right.</p>
-            <a href="#" class="service-link" onclick="openServiceModal('outbound'); return false;">
-                Learn More <i class="fa-solid fa-arrow-right"></i>
+            <div class="service-icon">
+                <i class="fa-solid fa-phone-volume"></i>
+            </div>
+
+            <h3>Sales & Telemarketing</h3>
+
+            <p>
+                Drive business growth through outbound sales campaigns, cold calling,
+                and professional lead qualification that converts prospects into customers.
+            </p>
+
+            <a href="#" class="service-link" onclick="openServiceModal('sales'); return false;">
+                
             </a>
         </div>
 
+        <!-- Lead Generation -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
-            <h3>Omnichannel Chat</h3>
-            <p>We manage customer conversations across WhatsApp, Facebook Messenger, Instagram, and Email — all in one fast, organized flow.</p>
-            <a href="#" class="service-link" onclick="openServiceModal('omnichannel'); return false;">
-                Learn More <i class="fa-solid fa-arrow-right"></i>
+            <div class="service-icon">
+                <i class="fa-solid fa-bullseye"></i>
+            </div>
+
+            <h3>Lead Generation</h3>
+
+            <p>
+                Generate qualified B2B leads through targeted prospect research,
+                CRM management, and data-driven outreach strategies.
+            </p>
+
+            <a href="#" class="service-link" onclick="openServiceModal('lead_generation'); return false;">
+                
             </a>
         </div>
 
+        <!-- Appointment Setting -->
         <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-            <h3>Technical Helpdesk</h3>
-            <p>Our agents are trained to handle Tier-1 and Tier-2 support — resolving software, hardware, and product-related issues with clarity.</p>
-            <a href="#" class="service-link" onclick="openServiceModal('technical'); return false;">
-                Learn More <i class="fa-solid fa-arrow-right"></i>
+            <div class="service-icon">
+                <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <h3>Appointment Setting</h3>
+
+            <p>
+                We schedule qualified meetings, manage calendars,
+                send reminders, and ensure your sales team focuses on closing deals.
+            </p>
+
+            <a href="#" class="service-link" onclick="openServiceModal('appointment'); return false;">
+            
             </a>
         </div>
+
+        <!-- Virtual Assistant -->
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-icon">
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+
+            <h3>Virtual Assistant</h3>
+
+            <p>
+                Delegate administrative work including email management,
+                scheduling, CRM updates, and day-to-day business support.
+            </p>
+
+            <a href="#" class="service-link" onclick="openServiceModal('virtual_assistant'); return false;">
+                
+            </a>
+        </div>
+
     </div>
 </section>
 
 <section id="why-choose-us" class="features-section">
-    <div class="section-tag" data-aos="fade-up"><i class="fa-solid fa-circle-dot"></i> Why JMD</div>
+    <div class="section-tag" data-aos="fade-up"><i class="fa-solid fa-circle-dot"></i> Why Osrick</div>
     <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
         Small Team. Big Work Ethic. <br>Zero Compromise on Quality.
     </h2>
@@ -169,7 +223,7 @@
 
         <div class="features-center-img" data-aos="zoom-in" data-aos-delay="200">
             <div class="arch-center">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600" alt="JMD Team at Work">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600" alt="Osrick Team at Work">
             </div>
         </div>
 
@@ -200,45 +254,45 @@
 </section>
 
 <section id="team-section" class="team-section">
-    <div class="section-tag" data-aos="fade-up"><i class="fa-solid fa-users"></i> The People Behind JMD</div>
+    <div class="section-tag" data-aos="fade-up"><i class="fa-solid fa-users"></i> The People Behind Osrick</div>
     <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Meet Our Core Team</h2>
     <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
         We're a small but focused team — each member trained, committed, and ready to represent your brand professionally.
     </p>
 
-    <div class="team-grid">
-        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-img">
-                <img src="{% static 'images/expert1.jpg' %}"
-                     alt="Team Member"
-                     onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=300'">
-            </div>
-            <h4>Team Member</h4>
-            <span>Founder & CEO</span>
-            <p>Leading JMD with a clear vision for professional, client-first BPO operations.</p>
+<div class="team-grid">
+
+    <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-img">
+            <img src="{% static 'images/hero1.png' %}"
+                 alt="Founder & CEO">
         </div>
 
-        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-img">
-                <img src="{% static 'images/expert2.jpg' %}"
-                     alt="Team Member"
-                     onerror="this.src='https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=300'">
-            </div>
-            <h4>Team Member</h4>
-            <span>Head of Operations</span>
-            <p>Ensures every client interaction is handled with precision and professionalism.</p>
+        <h4>Team Member</h4>
+        <span>Founder & CEO</span>
+
+        <p>
+            Leads Osrick's vision, business strategy, and client relationships,
+            ensuring exceptional outsourcing solutions and long-term partnerships.
+        </p>
+    </div>
+
+    <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-img">
+            <img src="{% static 'images/hero-2.png' %}"
+                 alt="Co-Founder & Head of Operations">
         </div>
 
-        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-img">
-                <img src="{% static 'images/expert3.jpg' %}"
-                     alt="Team Member"
-                     onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=300'">
-            </div>
-            <h4>Team Member</h4>
-            <span>Senior Support Lead</span>
-            <p>Manages agent quality, training, and daily performance across all service lines.</p>
-        </div>
+        <h4>Team Member</h4>
+        <span>Co-Founder & Head of Operations</span>
+
+        <p>
+            Oversees daily operations, service delivery, and team performance,
+            ensuring consistent quality and an outstanding customer experience.
+        </p>
+    </div>
+
+</div>
     </div>
 </section>
 
@@ -270,21 +324,30 @@
         <p style="color: #7288AE; margin-bottom: 20px;">Leave your details and our team will get back to you shortly.</p>
 
         <form id="talkForm">
+    {% csrf_token %}
+
     <div class="form-group">
         <label>Your Name</label>
         <input type="text" name="name" placeholder="Enter your full name" required>
     </div>
+
     <div class="form-group">
         <label>Business Email</label>
         <input type="email" name="email" placeholder="name@company.com" required>
     </div>
+
     <div class="form-group">
         <label>How can we help you?</label>
         <textarea name="message" placeholder="Tell us about your project or support needs..." required></textarea>
     </div>
+
     <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
         Send Message <i class="fa-solid fa-paper-plane"></i>
     </button>
+
+    <div id="formResponse"
+         style="display:none; margin-top:15px; text-align:center; font-weight:600;">
+    </div>
 </form>
     </div>
 </div>
