@@ -1,0 +1,296 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}JMD — BPO & Call Centre Solutions{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section id="hero-section" class="hero-section">
+    <div class="hero-content">
+        <div class="badge" data-aos="fade-down">
+            <i class="fa-solid fa-bolt"></i> A Fresh Team. A Serious Commitment.
+        </div>
+
+        <h1 data-aos="fade-up" data-aos-delay="100">
+            Reliable BPO Support <br>For Growing Businesses
+        </h1>
+
+        <p data-aos="fade-up" data-aos-delay="200">
+            JMD is a startup BPO based in Bangladesh, built by a team of 10 dedicated English-speaking agents. We may be new — but we're focused, trained, and ready to deliver real results for international clients.
+        </p>
+
+        <div class="hero-trust-pillars" data-aos="fade-up" data-aos-delay="300">
+            <div class="pillar-item">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                    <h4>10 Dedicated Agents</h4>
+                    <p>English-fluent, trained & ready</p>
+                </div>
+            </div>
+            <div class="pillar-item">
+                <i class="fa-solid fa-globe"></i>
+                <div>
+                    <h4>International Focus</h4>
+                    <p>Built for global client standards</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-primary" onclick="openTalkModal()">
+            Let's Talk Business <i class="fa-solid fa-comments"></i>
+        </button>
+    </div>
+
+    <div class="hero-images" data-aos="fade-left" data-aos-delay="200">
+        <div class="image-box arch-left">
+            <img src="{% static 'images/expert1.jpg' %}"
+                 alt="JMD Team Member"
+                 onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400'">
+            <div class="image-label">Support Lead</div>
+        </div>
+        <div class="image-box arch-center-hero">
+            <img src="{% static 'images/expert2.jpg' %}"
+                 alt="JMD Founder"
+                 onerror="this.src='https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=400'">
+            <div class="image-label">Founder</div>
+        </div>
+        <div class="image-box arch-right">
+            <img src="{% static 'images/expert3.jpg' %}"
+                 alt="JMD Team Member"
+                 onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400'">
+            <div class="image-label">Operations</div>
+        </div>
+    </div>
+</section>
+
+<div class="stats-section">
+    <div class="stats-grid">
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="counter" data-target="10">0</h3>
+            <p>Dedicated Agents</p>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="counter" data-target="4">0</h3>
+            <p>Core Services Offered</p>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="counter" data-target="24">0</h3>
+            <p>Hours Available Daily</p>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="counter" data-target="7">0</h3>
+            <p>Days a Week, Always On</p>
+        </div>
+    </div>
+</div>
+
+<section id="services" class="services-section">
+    <div class="section-tag" data-aos="fade-up"><i class="fa-solid fa-layer-group"></i> What We Do</div>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+        BPO Services Built For <br>International Standards
+    </h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+        From inbound calls to live chat support — we handle the customer-facing work so you can focus on growing your business.
+    </p>
+
+    <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+            <h3>24/7 Inbound Support</h3>
+            <p>We handle your customer support tickets, live chats, and phone calls around the clock — so your customers are never left waiting.</p>
+            <a href="#" class="service-link" onclick="openServiceModal('inbound'); return false;">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Outbound Telemarketing</h3>
+            <p>We reach out to your prospects with clear, professional communication — cold calling, lead generation, and appointment setting handled right.</p>
+            <a href="#" class="service-link" onclick="openServiceModal('outbound'); return false;">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+            <h3>Omnichannel Chat</h3>
+            <p>We manage customer conversations across WhatsApp, Facebook Messenger, Instagram, and Email — all in one fast, organized flow.</p>
+            <a href="#" class="service-link" onclick="openServiceModal('omnichannel'); return false;">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Technical Helpdesk</h3>
+            <p>Our agents are trained to handle Tier-1 and Tier-2 support — resolving software, hardware, and product-related issues with clarity.</p>
+            <a href="#" class="service-link" onclick="openServiceModal('technical'); return false;">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="why-choose-us" class="features-section">
+    <div class="section-tag" data-aos="fade-up"><i class="fa-solid fa-circle-dot"></i> Why JMD</div>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+        Small Team. Big Work Ethic. <br>Zero Compromise on Quality.
+    </h2>
+
+    <div class="features-container">
+        <div class="features-left">
+            <div class="feature-item" onclick="openOpsModal('onboarding')" data-aos="fade-right" data-aos-delay="100">
+                <span class="check-icon"><i class="fa-solid fa-bolt"></i></span>
+                <div>
+                    <h5>Fast Onboarding</h5>
+                    <p>We get aligned with your workflow quickly — no wasted time.</p>
+                </div>
+            </div>
+            <div class="feature-item" onclick="openOpsModal('omnichannel_ops')" data-aos="fade-right" data-aos-delay="200">
+                <span class="check-icon"><i class="fa-solid fa-headset"></i></span>
+                <div>
+                    <h5>Omnichannel Ready</h5>
+                    <p>Voice, chat, email and social — we handle them all.</p>
+                </div>
+            </div>
+            <div class="feature-item" onclick="openOpsModal('analytics')" data-aos="fade-right" data-aos-delay="300">
+                <span class="check-icon"><i class="fa-solid fa-chart-line"></i></span>
+                <div>
+                    <h5>Transparent Reporting</h5>
+                    <p>Regular updates so you always know what's happening.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-center-img" data-aos="zoom-in" data-aos-delay="200">
+            <div class="arch-center">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600" alt="JMD Team at Work">
+            </div>
+        </div>
+
+        <div class="features-right">
+            <div class="feature-item" onclick="openOpsModal('multilingual')" data-aos="fade-left" data-aos-delay="100">
+                <span class="check-icon"><i class="fa-solid fa-language"></i></span>
+                <div>
+                    <h5>English-Fluent Agents</h5>
+                    <p>Clear, professional communication — no language barriers.</p>
+                </div>
+            </div>
+            <div class="feature-item" onclick="openOpsModal('security')" data-aos="fade-left" data-aos-delay="200">
+                <span class="check-icon"><i class="fa-solid fa-lock"></i></span>
+                <div>
+                    <h5>Data Privacy First</h5>
+                    <p>Your client data is handled with full confidentiality.</p>
+                </div>
+            </div>
+            <div class="feature-item" onclick="openOpsModal('contracts')" data-aos="fade-left" data-aos-delay="300">
+                <span class="check-icon"><i class="fa-solid fa-file-contract"></i></span>
+                <div>
+                    <h5>Flexible Contracts</h5>
+                    <p>Start small, scale up — no rigid long-term lock-ins.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="team-section" class="team-section">
+    <div class="section-tag" data-aos="fade-up"><i class="fa-solid fa-users"></i> The People Behind JMD</div>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Meet Our Core Team</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+        We're a small but focused team — each member trained, committed, and ready to represent your brand professionally.
+    </p>
+
+    <div class="team-grid">
+        <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-img">
+                <img src="{% static 'images/expert1.jpg' %}"
+                     alt="Team Member"
+                     onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=300'">
+            </div>
+            <h4>Team Member</h4>
+            <span>Founder & CEO</span>
+            <p>Leading JMD with a clear vision for professional, client-first BPO operations.</p>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-img">
+                <img src="{% static 'images/expert2.jpg' %}"
+                     alt="Team Member"
+                     onerror="this.src='https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=300'">
+            </div>
+            <h4>Team Member</h4>
+            <span>Head of Operations</span>
+            <p>Ensures every client interaction is handled with precision and professionalism.</p>
+        </div>
+
+        <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-img">
+                <img src="{% static 'images/expert3.jpg' %}"
+                     alt="Team Member"
+                     onerror="this.src='https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=300'">
+            </div>
+            <h4>Team Member</h4>
+            <span>Senior Support Lead</span>
+            <p>Manages agent quality, training, and daily performance across all service lines.</p>
+        </div>
+    </div>
+</section>
+
+<div id="serviceModal" class="modal-overlay">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeServiceModal()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-body">
+            <div class="modal-icon" id="modalIcon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <h2 id="modalTitle">Service Title</h2>
+            <div id="modalDescription" class="modal-text"></div>
+            <button class="btn-primary" onclick="closeServiceModal(); openTalkModal();" style="margin-top: 28px; border:none; cursor:pointer;">
+                Book This Service <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="apply-modal-overlay" id="talkModal" style="display: none;">
+    <div class="apply-modal">
+        <button class="modal-close-btn" onclick="closeTalkModal()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h3>Let's Build Something Great Together</h3>
+        <p style="color: #7288AE; margin-bottom: 20px;">Leave your details and our team will get back to you shortly.</p>
+
+        <form id="talkForm">
+    <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="Enter your full name" required>
+    </div>
+    <div class="form-group">
+        <label>Business Email</label>
+        <input type="email" name="email" placeholder="name@company.com" required>
+    </div>
+    <div class="form-group">
+        <label>How can we help you?</label>
+        <textarea name="message" placeholder="Tell us about your project or support needs..." required></textarea>
+    </div>
+    <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+        Send Message <i class="fa-solid fa-paper-plane"></i>
+    </button>
+</form>
+    </div>
+</div>
+
+{% endblock %}      
+
+{% block page_js %}
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,8 @@
+{
+  "name": "Asha Bridal Beauty Parlor",
+  "description": "Bangladesh's premier luxury salon, wellness sanctuary, and bridal beauty parlor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

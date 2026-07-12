@@ -1,0 +1,336 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Careers — Join the JMD Team{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="{% static 'css/careers.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="careers-hero">
+    <div class="section-tag" data-aos="fade-down">
+        <i class="fa-solid fa-briefcase"></i> We're Hiring
+    </div>
+    <h1 data-aos="fade-up" data-aos-delay="100">
+        Grow With Us. <br>Build Something <span>Real.</span>
+    </h1>
+    <p data-aos="fade-up" data-aos-delay="200">
+        JMD is a growing BPO startup based in Bangladesh. We're looking for motivated, English-fluent individuals who want to build a career in international customer support — from day one.
+    </p>
+    <a href="#open-positions" class="btn-primary" data-aos="fade-up" data-aos-delay="300">
+        See Open Positions <i class="fa-solid fa-arrow-down"></i>
+    </a>
+</section>
+
+<section class="perks-section">
+    <div style="text-align:center;">
+        <div class="section-tag" data-aos="fade-up">
+            <i class="fa-solid fa-star"></i> Why JMD
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            What You Get Working With Us
+        </h2>
+    </div>
+
+    <div class="perks-grid">
+        <div class="perk-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="perk-icon"><i class="fa-solid fa-house-laptop"></i></div>
+            <div>
+                <h4>Work From Home</h4>
+                <p>Full remote setup — work from anywhere with a stable internet connection.</p>
+            </div>
+        </div>
+        <div class="perk-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="perk-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+                <h4>Full Training Provided</h4>
+                <p>No prior BPO experience needed — we train you from scratch, properly.</p>
+            </div>
+        </div>
+        <div class="perk-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="perk-icon"><i class="fa-solid fa-globe"></i></div>
+            <div>
+                <h4>International Exposure</h4>
+                <p>Work directly with international clients — real global experience on your CV.</p>
+            </div>
+        </div>
+        <div class="perk-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="perk-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+                <h4>Performance Bonus</h4>
+                <p>Deliver great results and get rewarded — monthly performance incentives.</p>
+            </div>
+        </div>
+        <div class="perk-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="perk-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+                <h4>Flexible Shifts</h4>
+                <p>Morning, evening, or night shifts available — pick what works for you.</p>
+            </div>
+        </div>
+        <div class="perk-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="perk-icon"><i class="fa-solid fa-handshake"></i></div>
+            <div>
+                <h4>Friendly Culture</h4>
+                <p>Small team, open communication — no corporate politics, just real work.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="open-positions" class="jobs-section">
+    <div style="text-align:center;">
+        <div class="section-tag" data-aos="fade-up">
+            <i class="fa-solid fa-briefcase"></i> Open Roles
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            Current Open Positions
+        </h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="150">
+            All positions are remote. English fluency is required for every role.
+        </p>
+    </div>
+
+    <div class="jobs-list">
+        <div class="job-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="job-left">
+                <div class="job-icon"><i class="fa-solid fa-headset"></i></div>
+                <div class="job-info">
+                    <h4>Inbound Support Agent</h4>
+                    <div class="job-tags">
+                        <span class="job-tag remote"><i class="fa-solid fa-wifi"></i> Remote</span>
+                        <span class="job-tag">Full-time</span>
+                        <span class="job-tag">Entry Level</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-apply" onclick="openApplyModal('Inbound Support Agent'); return false;">
+                Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="job-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="job-left">
+                <div class="job-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <div class="job-info">
+                    <h4>Outbound Telemarketer</h4>
+                    <div class="job-tags">
+                        <span class="job-tag remote"><i class="fa-solid fa-wifi"></i> Remote</span>
+                        <span class="job-tag">Full-time</span>
+                        <span class="job-tag">Entry Level</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-apply" onclick="openApplyModal('Outbound Telemarketer'); return false;">
+                Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="job-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="job-left">
+                <div class="job-icon"><i class="fa-solid fa-comments"></i></div>
+                <div class="job-info">
+                    <h4>Live Chat Agent</h4>
+                    <div class="job-tags">
+                        <span class="job-tag remote"><i class="fa-solid fa-wifi"></i> Remote</span>
+                        <span class="job-tag">Full-time</span>
+                        <span class="job-tag">Entry Level</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-apply" onclick="openApplyModal('Live Chat Agent'); return false;">
+                Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="job-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="job-left">
+                <div class="job-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <div class="job-info">
+                    <h4>Technical Support Agent</h4>
+                    <div class="job-tags">
+                        <span class="job-tag remote"><i class="fa-solid fa-wifi"></i> Remote</span>
+                        <span class="job-tag">Full-time</span>
+                        <span class="job-tag">Mid Level</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-apply" onclick="openApplyModal('Technical Support Agent'); return false;">
+                Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="requirements-section">
+    <div style="text-align:center; margin-bottom: 0;">
+        <div class="section-tag" data-aos="fade-up">
+            <i class="fa-solid fa-clipboard-check"></i> Requirements
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">
+            What We're Looking For
+        </h2>
+    </div>
+
+    <div class="req-grid">
+        <div class="req-list">
+            <div class="req-item" data-aos="fade-right" data-aos-delay="100">
+                <i class="fa-solid fa-check"></i>
+                <span>Fluent in English — spoken and written</span>
+            </div>
+            <div class="req-item" data-aos="fade-right" data-aos-delay="150">
+                <i class="fa-solid fa-check"></i>
+                <span>Stable internet connection (minimum 10 Mbps)</span>
+            </div>
+            <div class="req-item" data-aos="fade-right" data-aos-delay="200">
+                <i class="fa-solid fa-check"></i>
+                <span>Quiet, distraction-free work environment</span>
+            </div>
+            <div class="req-item" data-aos="fade-right" data-aos-delay="250">
+                <i class="fa-solid fa-check"></i>
+                <span>Basic computer and typing skills</span>
+            </div>
+            <div class="req-item" data-aos="fade-right" data-aos-delay="300">
+                <i class="fa-solid fa-check"></i>
+                <span>Available for assigned shift (flexible options)</span>
+            </div>
+            <div class="req-item" data-aos="fade-right" data-aos-delay="350">
+                <i class="fa-solid fa-check"></i>
+                <span>Willingness to learn and take feedback</span>
+            </div>
+        </div>
+
+        <div class="req-cta" data-aos="fade-left" data-aos-delay="200">
+            <h3>Think You're A <span>Good Fit?</span></h3>
+            <p>We don't require years of experience — we require the right attitude. If you're serious, we'll train you for everything else.</p>
+            <a href="#open-positions" class="btn-primary">
+                Apply Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="apply-modal-overlay" id="applyModal">
+    <div class="apply-modal">
+        <button class="modal-close-btn" onclick="closeApplyModal()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <h3>Apply for Position</h3>
+        <span class="position-label" id="applyPosition">Inbound Support Agent</span>
+
+        <form id="applyForm">
+            {% csrf_token %}
+            <input type="hidden" name="position" id="hiddenPosition">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="full_name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="+880 1XXX XXXXXX" required>
+            </div>
+            <div class="form-group">
+                <label>English Level</label>
+                <select name="english_level" required>
+                    <option value="">Select your level</option>
+                    <option>Fluent / Native-like</option>
+                    <option>Advanced</option>
+                    <option>Intermediate</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Why do you want to join JMD?</label>
+                <textarea name="cover_letter" placeholder="Tell us a little about yourself..." required></textarea>
+            </div>
+            
+            <div id="applyFormError" style="color: #e63946; margin-bottom: 10px; display: none; font-weight: 500;"></div>
+
+            <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+                Submit Application <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+
+        <div class="form-success" id="formSuccess" style="display: none;">
+            <i class="fa-solid fa-circle-check"></i>
+            <h4>Application Received!</h4>
+            <p>Thank you for applying. We'll review your application and get back to you within 3 business days.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block page_js %}
+<script>
+function openApplyModal(position) {
+    document.getElementById('applyPosition').innerText = position;
+    document.getElementById('hiddenPosition').value = position;
+    document.getElementById('applyForm').style.display = 'block';
+    document.getElementById('formSuccess').style.display = 'none';
+    document.getElementById('applyFormError').style.display = 'none';
+    document.getElementById('applyModal').classList.add('show');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeApplyModal() {
+    document.getElementById('applyModal').classList.remove('show');
+    document.body.style.overflow = 'auto';
+}
+
+// ব্যাকএন্ডে রিয়েল ডাটা সাবমিট করার লজিক (AJAX)
+document.addEventListener("DOMContentLoaded", () => {
+    const applyForm = document.getElementById('applyForm');
+    if (applyForm) {
+        applyForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const csrfToken = applyForm.querySelector('[name=csrfmiddlewaretoken]').value;
+            const errorDiv = document.getElementById('applyFormError');
+            const submitBtn = applyForm.querySelector('button[type="submit"]');
+            
+            if(submitBtn) submitBtn.disabled = true;
+
+            fetch('/save-application/', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-CSRFToken': csrfToken
+                }
+            })
+            .then(response => {
+                if(response.ok) return response.json();
+                throw new Error('Submission failed');
+            })
+            .then(data => {
+                document.getElementById('applyForm').style.display = 'none';
+                document.getElementById('formSuccess').style.display = 'block';
+                applyForm.reset();
+                setTimeout(closeApplyModal, 4000); // ৪ সেকেন্ড পর মোডাল অটো বন্ধ হবে
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                errorDiv.innerText = "✕ Connection error. Please try again.";
+                errorDiv.style.display = 'block';
+            })
+            .finally(() => {
+                if(submitBtn) submitBtn.disabled = false;
+            });
+        });
+    }
+});
+
+window.addEventListener('click', (e) => {
+    const modal = document.getElementById('applyModal');
+    if (e.target === modal) closeApplyModal();
+});
+</script>
+{% endblock %}

@@ -1,0 +1,42 @@
+.footer {
+    background: #111844;
+    color: #EAE0CF;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left h2 {
+    margin-bottom: 10px;
+    color: #7288AE;
+}
+
+.footer-left p {
+    max-width: 300px;
+    opacity: 0.8;
+}
+
+.footer-right {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.logo-icon {
+    width: 40px;      /* আপনার প্রয়োজনমতো আইকনের চওড়া সাইজ দিন */
+    height: 40px;     /* আপনার প্রয়োজনমতো আইকনের উচ্চতা দিন */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

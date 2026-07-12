@@ -1,0 +1,52 @@
+{% load static %}
+<footer id="contact-footer" class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <a href="{% url 'home' %}" class="logo">
+                <div class="logo-icon" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+            <img src="{% static 'images/icon.png' %}" alt="JMD Logo" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+                <span>JMD</span> <!-- eTech থেকে JMD করা হলো -->
+            </a>
+            <p>Next-gen BPO & customer support solutions driven by dedicated English-speaking agents and verified industry experts.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-links-grid">
+            <div class="footer-col">
+                <h6>Services</h6>
+                <!-- সার্ভিস লিংকগুলো হোম পেইজের সার্ভিস সেকশনে নিয়ে যাবে -->
+                <a href="{% url 'home' %}#services">Inbound Support</a>
+                <a href="{% url 'home' %}#services">Outbound Telemarketing</a>
+                <a href="{% url 'home' %}#services">Omnichannel Chat</a>
+                <a href="{% url 'home' %}#services">Technical Helpdesk</a>
+            </div>
+            <div class="footer-col">
+                <h6>Company</h6>
+                <!-- কোম্পানি ইনফো লিংকগুলো হোমের নির্দিষ্ট আইডি এবং ক্যারিয়ার পেইজে পাঠাবে -->
+                <a href="{% url 'home' %}">About Us</a>
+                <a href="{% url 'home' %}#why-choose-us">Why Choose Us</a>
+                <a href="{% url 'home' %}#team-section">Our Team</a>
+                <a href="{% url 'careers' %}">Careers</a>
+            </div>
+            <div class="footer-col">
+                <h6>Contact</h6>
+                <p><i class="fa-solid fa-envelope"></i> hello@jmd-bpo.com</p> <!-- ইমেইল JMD করা হলো -->
+                <p><i class="fa-solid fa-phone"></i> +1 (555) 019-2834</p>
+                <p><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 JMD Solutions. All rights reserved.</p> <!-- কপিরাইট নাম পরিবর্তন -->
+        <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
